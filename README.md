@@ -2,7 +2,7 @@
   <img src="img/Captura de Tela (117).png">
 
 <h2>Project Deploy</h2>
- <a href="https://to-do-list-fuotd6mnk-lucaslandivar.vercel.app">Click here</a>
+ <a href="https://advanced-to-do-list-eig32og91-lucaslandivar.vercel.app">Click here</a>
   
 <h2>Description of the project</h2>
 <p>I make a To-Do List in JavaScript, wich helps the user to organize his tasks into a simple way. I already make a To-do project, but i want to improve it, adding more functions like search a task, edit a task, delete a task and a filter for the tasks.</p> 
