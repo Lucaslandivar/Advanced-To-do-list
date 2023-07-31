@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do Avançado</title>
+    <title>Multiplication Board</title>
+    <!-- Links -->
+    <link rel="shortcut icon" href="img/bx-calculator.svg" type="image/x-icon">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="JS/script.js" defer></script>
 </head>
 <body>
-    
+    <!-- Multiplication board generator -->
+    <h2>Digite um número para gerar a taboada:</h2>
+    <form id="multiplication-form">
+        <div class="form-control">
+            <label>Tabuada do:</label>
+            <input type="number" name="number" id="number" placeholder="3">
+        </div>
+        <div class="form-control">
+            <label>Multiplicar até:</label>
+            <input type="number" name="multiplicator" id="multiplicator" value="10">
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
+    <!-- Square root generator -->
+    <h2>Digite um número para gerar a raíz quadrada:</h2>
+    <form id="squareRoot-form">
+        <div class="form-control">
+            <label>Raíz do:</label>
+            <input type="number" name="number" id="squareRoot-number" placeholder="3">
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
+    <!-- Square root result -->
+    <div id="squareRoot-table">
+        <h2 id="squareRoot-title">Raíz do número: <span></span></h2>
+        <div id="squareRoot-operations">
+            <p>Informe um número para calcular a raíz quadrada...</p>
+        </div>
+    </div>
+    <!-- Multiplication board result -->
+    <div id="multiplication-table">
+        <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
+        <div id="multiplication-operations">
+            <p>Informe um número para gerar uma tabuada...</p>
+        </div>
+    </div>
 </body>
 </html>
