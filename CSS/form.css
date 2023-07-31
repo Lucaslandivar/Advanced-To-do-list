@@ -1,0 +1,24 @@
+/* Todo Form */
+#todoForm, 
+#editForm {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todoForm p,
+#editForm p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.formControl {
+    display: flex;
+}
+
+.formControl input {
+    margin-right: 0.3rem;
+}
+
+#cancelEditBtn {
+    margin-top: 1rem;
+}

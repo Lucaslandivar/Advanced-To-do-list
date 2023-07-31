@@ -3,47 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplication Board</title>
-    <!-- Links -->
-    <link rel="shortcut icon" href="img/bx-calculator.svg" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>To Do Avançado</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/toolbar.css">
+    <link rel="stylesheet" href="CSS/todo.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/bxs-edit.svg" type="image/x-icon">
+    <!-- JavaScript -->
     <script src="JS/script.js" defer></script>
 </head>
 <body>
-    <!-- Multiplication board generator -->
-    <h2>Digite um número para gerar a taboada:</h2>
-    <form id="multiplication-form">
-        <div class="form-control">
-            <label>Tabuada do:</label>
-            <input type="number" name="number" id="number" placeholder="3">
+    <div class="todoContainer">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>To-do Avançado</h1>
+        </header>
+        <!-- Adicionar tarefa -->
+        <form id="todoForm">
+            <p>Adicione a sua tarefa:</p>
+            <div class="formControl">
+                <input type="text" id="todoInput" placeholder="O que você vai fazer?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <!-- Editar tarefa -->
+        <form id="editForm" class="hide">
+            <p>Edite a sua tarefa:</p>
+            <div class="formControl">
+                <input type="text" id="editInput">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancelEditBtn"> Cancelar</button>
+        </form>
+        <!-- Ferramentas -->
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="searchInput" placeholder="Buscar tarefa">
+                    <button id="eraseButton">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- Filtro -->
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filterSelect">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
         </div>
-        <div class="form-control">
-            <label>Multiplicar até:</label>
-            <input type="number" name="multiplicator" id="multiplicator" value="10">
-        </div>
-        <input type="submit" value="Calcular">
-    </form>
-    <!-- Square root generator -->
-    <h2>Digite um número para gerar a raíz quadrada:</h2>
-    <form id="squareRoot-form">
-        <div class="form-control">
-            <label>Raíz do:</label>
-            <input type="number" name="number" id="squareRoot-number" placeholder="3">
-        </div>
-        <input type="submit" value="Calcular">
-    </form>
-    <!-- Square root result -->
-    <div id="squareRoot-table">
-        <h2 id="squareRoot-title">Raíz do número: <span></span></h2>
-        <div id="squareRoot-operations">
-            <p>Informe um número para calcular a raíz quadrada...</p>
-        </div>
-    </div>
-    <!-- Multiplication board result -->
-    <div id="multiplication-table">
-        <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
-        <div id="multiplication-operations">
-            <p>Informe um número para gerar uma tabuada...</p>
+        <!-- Todo List -->
+        <div id="todoList">
+            <!-- <div class="todo">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finishTodo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editTodo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="removeTodo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finishTodo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editTodo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="removeTodo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div> -->
         </div>
     </div>
 </body>
